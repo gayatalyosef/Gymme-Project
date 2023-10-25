@@ -1,0 +1,137 @@
+ 
+   /********* reviews section *********/
+
+  
+  .reviews-section{
+    height:55vh;
+    width: 50vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .review-title{
+    font-family: 'Noto Sans';
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 25px;
+  }
+  
+  .studio-reviews{
+    height: 66%;
+    margin: 20px;
+    margin-top: 0;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    width: 95%;
+  }
+  
+  .user-review-container{
+    display: flex;
+    align-items: center;
+    margin: 15px 5px;
+  }
+  
+  .emoji-container{
+    flex:0.3;
+    align-items: center;
+  }
+  
+  .user-review{
+    flex:5;
+    font-family: 'Noto Sans';
+    font-size: 13px;
+    border-left: 1.5px solid black;
+    padding: 10px;
+  }
+  
+  .date-review{
+    margin-top: -5px;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+  
+  .new-review-container{
+    background-color: #ffffffd7;
+    border-radius: 10px;
+    margin: 5px 40px;
+    padding: 15px 0px 5px;
+    padding-left: 30px;
+    height: 50px;
+    margin-top: -10px;
+    box-shadow: 1px 1px 3px rgb(225, 225, 225);
+    margin-bottom: 0;
+  }
+  
+  #new-review{
+    font-family: 'Noto Sans';
+    border:none;
+    line-height: 30px;
+    width: 30vw;
+    background-color: #00000000;
+  }
+  
+  
+  #review-under-line{
+    width: 30vw;
+    border: 0.7px solid black;
+  }
+  
+  .send-review{
+    font-family: 'Noto Sans';
+    font-weight: 200;
+    letter-spacing: 1px;
+    background-color: #80d9f27b;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 1px 0.5px 1px #e1e1e1;
+  
+  }
+  
+  .send-review:hover{
+    background-color: #71bed3da;
+    color: white;
+  }
+  
+  #emoji-btn{
+    background-color: #00000000;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #emoji-btn:hover{
+    color: gray;
+    animation: shake 0.25s infinite linear;
+  
+  }
+  .emoji-options{
+    padding: 7px 20px;
+    background-color: #87e3fd5c;
+    width: 165px;
+    border-radius: 20px;
+    position: relative;
+    margin-left:210px;
+    margin-top: 10px;
+  }
+  
+  .emoji-options:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #87e3fd5c;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #87e3fd5c;
+    right: 19px;
+    top: -19px;
+  }
+  
+  #emjSelect:hover{
+    color: #5592a3e1;
+    cursor: pointer;
+  }
+  

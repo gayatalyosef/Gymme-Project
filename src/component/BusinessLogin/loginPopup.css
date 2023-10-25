@@ -1,0 +1,110 @@
+/* LoginPopup.css */
+.login-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    z-index: 10;
+  }
+  
+  .login-popup h2 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .login-popup p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .login-popup label {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .login-popup label span {
+    margin-right: 10px;
+  }
+  
+  
+  .login-popup input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .login-popup button {
+    background-color: #007bff;
+    color: white;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .login-popup button:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-popup button:last-child {
+    margin-top: 5px;
+    background-color: #6c757d;
+  }
+  
+  .login-popup button:last-child:hover {
+    background-color: #5a6268;
+  }
+
+  .switch-form-btn {
+    background-color: transparent;
+    color: #007bff;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: inherit;
+  }
+  
+  .switch-form-btn:hover {
+    color: #0056b3;
+  }
+
+  .message {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .message.success {
+    color: green;
+  }
+  
+  .message.error {
+    color: red;
+  }
+
+  .close-button {
+    background-color: red;
+    color: red;
+  }
+  
+  .close-button:hover {
+    background-color: #cc0000;
+  }

@@ -1,0 +1,325 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Noto Sans';
+}
+
+/***** top menu *****/
+
+.myBusiness-container {
+  background-color: white; 
+}
+
+.title-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin-left: 42vw;
+  font-family: 'Noto Sans';
+  font-weight: 300;
+  font-size: 25px; 
+  color: black;
+  letter-spacing: 2px; 
+  text-transform: capitalize;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  color: black;
+} 
+
+.tab {
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin: 0 20px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.tab:hover {
+  color:gray;
+}
+
+.tab.active {
+  border-bottom: 1px solid #0000009e;
+}
+
+.backToMap{
+  width: 180px;
+  font-family: 'Noto Sans';
+  font-weight: 200;
+  font-size: 14px;
+  border: 0.9px solid black;
+  border-radius: 40px;
+  padding: 9px 15px;
+  transition: all 0.25s ease;
+  letter-spacing: 1px;
+  align-self: flex-start;
+  background-color: transparent;
+  color: black;
+  margin: 15px 15px 5px;
+}
+
+.backToMap:hover {
+  /*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform: translateY(-3px);*/
+  color:#adadad;
+  border: 0.9px solid #adadad;
+  display: inline-block;
+}
+
+.go_premium {
+  margin-right: 30px;
+  margin-left: auto;
+  width: 250px;
+  height: 45px;
+  font-family: 'Noto Sans';
+  font-weight: 500;
+  font-size: 16px;
+  border: none; 
+  border-radius: 50px;
+  padding: 15px 30px;
+  transition: all 0.5s ease;
+  letter-spacing: 1.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #f4e511, #cd6632);
+  color: #060707;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
+}
+
+.go_premium:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform: translateY(-2px);
+}
+
+.go_premium:active {
+  transform: translateY(-1px);
+}
+
+.go_premium::before {
+  content: ""; 
+  margin-right: 5px; 
+}
+
+.go_premium::after {
+  content: "\1F451"; 
+  font-size: 24px;
+  margin-left: 5px;
+  position: relative;
+  top: -3px;
+  color: #000000; 
+}
+
+
+/***** My Studios *****/
+
+.tab-content {
+  background-color: white;
+  padding: 10px;
+  border: none;
+  position: relative; 
+}
+
+.add-studio-box label {
+  font-weight: bold;
+}
+
+.add-studio-box button {
+  font-family: 'Noto Sans';
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 20px; 
+  margin: 1px 5px;
+  border: none;
+  transition: all 0.5s;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.category-content{
+  margin-bottom: '10px';
+  margin-top: 3px;
+}
+
+.tab-content label {
+  font-weight: bold;
+}
+
+.tab-content input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input-error{
+  color: rgb(156, 7, 7);
+  background-color: #ef545468;
+}
+
+#edit-input-error{
+  color: rgb(156, 7, 7);
+  background-color: #ef545468;
+}
+
+.tab-content button:hover {
+  background-color: #b8c1c5;
+}
+
+.tab-content button{
+  background-color: #d2dade;
+  font-family: 'Noto Sans';
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 20px; 
+  margin: 10px 5px 0;
+  border: none;
+  transition: all 0.5s;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.category-wrapper{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+
+.days_and_hours{
+  margin-bottom: 10px;
+}
+
+#contact-Info-edit{
+  width: 108px;
+}
+
+.edit-title{
+  margin-top:3px;
+  margin-right: 3px;
+}
+
+
+.bolder-txt{
+  font-weight: 600;
+}
+
+#trash:hover{
+  color: #3b3a3ac8;
+  cursor: pointer;
+  animation: shake 0.25s infinite linear;
+}
+
+#edit{
+  padding-right: 65px;
+}
+
+#edit:hover{
+  color: #3b3a3ac8;
+  cursor: pointer;
+}
+
+.add-new-studio-title{
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+#photoSelect{
+  margin-left: 5px;
+  padding: 3px 10px;
+  border-radius: 8px;
+}
+
+/**** My account tab ****/
+
+.my-account-container{
+  margin-top: 20px;
+}
+
+.account-status{
+  font-family: 'Noto Sans';
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.my-account-text{
+  font-size: 16px;
+  font-weight: normal;
+  margin: 20px 190px;
+  line-height: 30px;
+  background-color: whitesmoke;
+  border-radius: 30px;
+  padding: 20px 15px;
+}
+
+#cancel-subscription-button{
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#crown-icon:hover{
+  animation: shake 0.25s infinite linear;
+}
+
+.my-account-titles:hover{
+  text-decoration: underline;
+}
+
+/***** Reports *****/
+
+.monthly_report_button {
+  background-color: blue;
+  color: white;
+  font-size: 1rem;
+}
+
+.pdf-frame {
+  width: 54%;
+  height: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+
+
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+
+
+
+
+
+
+

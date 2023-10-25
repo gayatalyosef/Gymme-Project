@@ -1,0 +1,70 @@
+
+.white-container{
+    margin: 0 25px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+#activity-hours-container{
+    margin-top: 30px;
+}
+
+#workoutType-container{
+    margin-top: 10px;
+}
+
+#levels-container{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+.activity-hours-title{
+    font-family: 'Noto Sans';
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 25px;
+    line-height: 25px;
+}
+
+.table-container{
+    line-height: 25px;
+    text-align: left;
+    margin-left: 25px;
+}
+  
+table{
+    width: 100%;
+}
+
+th{
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 13.5px;
+}
+
+.thin-text{
+    font-weight: 300;
+}
+
+.inline-title{
+    font-family: 'Noto Sans';
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 25px;
+    line-height: 25px;
+    display: inline-block;
+}
+
+
+#check-icon{
+    margin-left: 20px;
+    margin-right: 5px;
+    color:#000000a2
+}
+
+.thin-text-list{
+    font-size: 14px;
+    font-weight: 300;
+}

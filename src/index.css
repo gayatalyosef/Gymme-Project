@@ -1,0 +1,504 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}
+
+code {
+  font-family: 'Noto Sans';
+}
+
+/********* Scroll bar  *********/
+
+::-webkit-scrollbar
+{
+  width: 2.5px;
+  background-color: #00000000;
+}
+
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px #7a797946;
+  border-radius: 10px;
+  background-color: #cbcbcb;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.272);
+}
+
+/********* landing page  *********/
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.landing-page{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,.4);
+}
+
+.content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.large-title{
+  font-family: 'Dancing Script';
+  font-size: 120px;
+  font-weight: 700;
+  justify-self: center;
+  margin-top: 30vh;
+  color: white;
+  text-shadow: #9b9b9b 1px 0.3px 1px;
+}
+
+.find-your-fitnessclub-btn{
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1.6px;
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 0px;
+  color: white;
+  padding: 15px 30px;
+  transition: all 0.25s ease;
+  background-color: transparent;
+}
+
+.find-your-fitnessclub-btn:hover{
+  background-color: #ffffff4b;
+}
+
+#magnifying-glass{
+  color: white;
+}
+
+.button-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.business_login{
+  width: 240px;
+  font-family: 'Noto Sans';
+  font-weight: 300;
+  font-size: 14px;
+  border: 1px solid #71bed3;
+  border-radius: 40px;
+  padding: 9px 35px;
+  transition: all 0.25s ease;
+  letter-spacing: 1px;
+  align-self: flex-start;
+  background-color: transparent;
+  color: #71bed3;
+  margin: 15px 15px;
+}
+
+.business_login:hover{
+  background-color: #71bed3;
+  color:white;
+  border: 1px solid #71bed3;
+}
+
+.sign_out{
+  width: 240px;
+  font-family: 'Noto Sans';
+  font-weight: 300;
+  font-size: 14px;
+  border: 1px solid #71bed3;
+  border-radius: 40px;
+  padding: 9px 35px;
+  transition: all 0.25s ease;
+  letter-spacing: 1px;
+  align-self: flex-end;
+  background-color: transparent;
+  color: #71bed3;
+  margin: 15px 0;
+}
+
+.sign_out:hover{
+  background-color: #71bed3;
+  color:white;
+  border: 1px solid #71bed3;
+}
+
+/********* top menu  *********/
+
+.top_menu{
+  display: flex;
+  justify-content: right;
+}
+
+#view-as-list-btn{
+  width: 160px;
+  font-family: 'Noto Sans';
+  font-weight: 300;
+  font-size: 14px;
+  margin: 5px 5px;
+  margin-right: 0;
+  margin-top: 10px;
+  color: black;
+  border: none;
+  background-color: white;
+  float: right;
+  padding: 9px;
+  transition: all 0.25s ease;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+#view-as-list-btn:hover, #view-in-map-btn:hover{
+  color: #4daec9;
+}
+
+#view-in-map-btn{
+  width: 160px;
+  font-family: 'Noto Sans';
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  color: black;
+  border: none;
+  background-color: #f5f5f5dd;
+  float: right;
+  padding: 9px;
+  transition: all 0.25s ease;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+
+
+
+
+/********* main page partition  *********/
+
+.parent{
+  display: flex;
+}
+
+.filters_div{
+  flex: 1.1;
+  padding-left: 15px;
+  font-family: 'Noto Sans';
+  font-weight: 300;
+  font-size: 14px;
+  overflow-y:scroll;
+  overflow-x: hidden;
+  height: 92vh;
+}
+
+.map_div{
+  flex: 3.5;
+}
+
+.map-container{
+  height: 92vh;
+}
+
+.listViewdiv{
+  flex: 3.5;
+  background-image: url("./assets/mapBg.jpg");
+  background-size: cover;
+}
+
+.map-info-window{
+  padding-left: 20px;
+}
+
+
+/********* list presentation section  *********/
+
+.listViewContainer{
+  display: flex;
+  height: 92vh;
+  overflow-y:scroll;
+  overflow-x: hidden;
+}
+
+ .gymsList{
+  flex: 1;
+  background-color: #ffffffcc;
+  overflow-y:scroll;
+  overflow-x: hidden;
+ }
+
+#viewList_title{
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 17px 20px;
+}
+
+.gymsListItem{
+  width: 96%;
+  font-family: 'Noto Sans';
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 0px;
+  margin: 1px 5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #dfdada;
+  transition: all 0.5s;
+  position: relative;
+  cursor: pointer;
+}
+
+.gymsListItem:hover{
+  background-color: #dbdfdf56;
+  border-bottom: 1px solid #7bcee556;
+  color: #4daec9;
+  cursor: pointer;
+}
+
+
+
+.apllyAll-andTitle-container{
+  display: flex;
+  height: 25px;
+}
+
+ /********* gyms details section *********/
+
+ .gymDetails{
+  flex:2;
+  background-color: #ffffffcc;
+  font-family: 'Noto Sans';
+  overflow-y:scroll;
+  overflow-x: hidden;
+ }
+
+.detailsContainer{
+  display: flex;
+  margin: 10px 30px;
+  height: 38vh;
+}
+
+#item_img{
+  flex:1;
+  align-self: flex-end;
+  height: 85%;
+}
+
+.itemDetails{
+  flex: 4;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.boldText_title{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.boldText{
+  font-weight: 600;
+}
+
+#rateDumbell{
+  opacity: 0.6;
+  cursor:text;
+}
+.rateMe_container{
+  width: max-content;
+  position: relative;
+  padding-left: 10px;
+
+}
+
+.rateMe_btn {
+  font-family: 'Noto Sans';
+  font-size: 14px;
+  padding: 5px 30px;
+  border: none;
+  cursor: pointer;
+  position:relative;
+  overflow:hidden;
+  background-color: #f5eda9;
+  height: 35px;
+  margin-left: -13px;
+  border-radius: 30px;
+  margin-top: 5px;
+}
+
+.rateMe_btn:before {
+  content: "";
+  position: absolute;
+  height: 150px;
+  width: 50px;
+  background : #fff;
+  left: -55px;
+  top: -40px;
+  transform: rotate(37deg);
+  transition: all .3s;
+  opacity: 0.3;
+}
+
+.rateMe_btn:hover:before {
+  left:95%;
+}
+
+#rate_select{
+  display: inline-block;
+  background-color: white;
+  border: 1px solid #00000000;
+  border-radius: 50%;
+  margin-left: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+
+}
+
+#rate_select:hover{
+  background-color: #f5eda9a4;
+  border: 1px solid #d3ce90;
+  transition: all 0.25s ease;
+}
+
+#rateMe_confirm{
+  margin-left: 10px;
+  color: #d3ce90;
+}
+
+
+ /********* filters section *********/
+
+.filters_title{
+  flex:1;
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+  height: max-content;
+  margin-top: 5px;
+}
+
+.apply_all_btn{
+  flex:1;
+  margin-top: 6.5px;
+  margin-right: 10px;
+  margin-left: 70px;
+  font-family: 'Noto Sans';
+  font-weight: 600;
+  font-size: 13px;
+  outline:none;
+  height: 30px;
+  text-align: center;
+  border-radius:40px;
+  background: #fff;
+  border: 1.7px solid #1ECD97;
+  color: #1ECD97;
+  letter-spacing:0.5px;
+  text-shadow:0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.apply_all_btn:hover {
+    color:white;
+    background: #1ECD97;
+}
+
+#error_under_applyall{
+  font-size: 12px;
+  width: fit-content;
+  float: right;
+  color: #c50e0ef5;
+  border-radius:40px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+
+.filters_medium_title{
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column1 {
+  float: left;
+  width: 35%;
+}
+.column2 {
+  float: left;
+  width: 50%;
+}
+.column3 {
+  float: left;
+  width: 24%;
+}
+.column4 {
+  float: left;
+  width: 30%;
+}
+
+.separator_line{
+  margin-top: 15px;
+  width: 95%;
+  border: 0.8px solid #e0ddda;
+  border-radius: 25px;
+}
+
+.bottom_margin{
+  margin-bottom: 20px;
+}
+
+#dumbbell:hover{
+  display: inline-block;
+  position: relative;
+  animation: shake 0.25s infinite linear;
+}
+
+#dumbbell{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+ 
