@@ -6,6 +6,10 @@ By providing a user-friendly interface and a comprehensive database of fitnesscl
 
 ***
 
+## Video (short version in low quality due to size limitation)
+
+https://github.com/tomgesser1/gymme/assets/92454507/767ada00-0455-4cf1-83aa-11b43746300a
+
 
 ## how to run the project
 run the command: npm run dev
@@ -198,8 +202,5 @@ By organizing the data into these collections, we can efficiently manage and ret
 * [General_Report_For_Joe.pdf](https://github.com/tomgesser1/gymme/files/11860625/General_Report_For_Joe.pdf)
 * [Studios_Report_For_Joe.pdf](https://github.com/tomgesser1/gymme/files/11860630/Studios_Report_For_Joe.pdf)
 
-  
-## Video (short version in low quality due to size limitation)
 
-https://github.com/tomgesser1/gymme/assets/92454507/767ada00-0455-4cf1-83aa-11b43746300a
 
