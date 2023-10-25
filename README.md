@@ -6,14 +6,6 @@ By providing a user-friendly interface and a comprehensive database of fitnesscl
 
 ***
 
-⚠️ **Important Note**
-
-Please be aware that the API key used for integrating GoogleMaps services is exposed within the project's code.
-
-To ensure the security and integrity of our project and Google accounts, it is **crucial NOT to make the project public or share it openly.**
-
-***
-
 
 ## how to run the project
 run the command: npm run dev
@@ -211,10 +203,3 @@ By organizing the data into these collections, we can efficiently manage and ret
 
 https://github.com/tomgesser1/gymme/assets/92454507/767ada00-0455-4cf1-83aa-11b43746300a
 
-
-## Team Members
-- Tal Hannover 
-- Yossi Keren
-- Tom Gesser
-- Shaked Ronen
-- Gaya Talyosef
