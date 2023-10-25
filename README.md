@@ -14,9 +14,6 @@ https://github.com/tomgesser1/gymme/assets/92454507/767ada00-0455-4cf1-83aa-11b4
 ## how to run the project
 run the command: npm run dev
 
-      If you are running the project from the University, please make sure to connect with a hotspot.
-      There is an issue with connecting to the database when using the University's free WIFI.
-
 Ensure that you have the following installed:
 * **NodeJs** version 16.17.0 or higher 
 * **mongodb** version 5.5.0 or higher
